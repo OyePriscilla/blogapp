@@ -1,0 +1,15 @@
+<ul>
+
+<li>
+    <h3><%= @user.name %></h3>
+    <p><%= @user.bio %></p>
+    <img src = '<%= @user.picture %>' alt='image' />
+</li>
+</ul>
+<%= link_to "Edit User", edit_user_path %>
+<%= link_to "Home", users_path %>
+<%= link_to "Delete", user_path, data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+

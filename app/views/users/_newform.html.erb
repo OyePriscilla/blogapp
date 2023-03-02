@@ -1,0 +1,21 @@
+<%= form_with model: @user do |form| %>
+<div>
+<%= form.label :name %><br>
+<%= form.text_field :name %>
+</div>
+
+<div>
+<%= form.label :bio %><br>
+<%= form.text_field :bio %>
+</div>
+
+<div>
+<%= form.label :picture %><br>
+<%= form.text_field :picture %>
+</div>
+
+<div>
+<%= form.submit 'ADD' %>
+</div>
+<% end %>
+
